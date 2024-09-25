@@ -1,0 +1,93 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --doc-height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4A98F7;
+  height: 100vh;
+}
+
+.container {
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  user-select: none;
+  height: 100vh;
+}
+
+section {
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tools-board {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 22px 0;
+}
+
+.tools-board .row {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.row .title {
+  color: #333;
+  font-size: 1rem;
+}
+
+.row .options {
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+
+.row .options .option {
+  display: flex;
+  user-select: none;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.row .options .option .icon {
+  font-size: 1.3rem;
+  padding-left: 3px;
+}
+
+.row .options .option .name {
+  padding-left: 8px;
+}
+
+.option :where(span, label) {
+  color: #5A6168;
+  cursor: pointer;
+}
+
+.option:is(:hover, .active) :where(span, label) {
+  color: #4A98F7;
+}
+
+.option input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px 0 5px;
+  cursor: pointer;
+}
+
