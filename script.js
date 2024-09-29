@@ -11,6 +11,7 @@ const saveImgBtn = document.querySelector(".save-img");
 const ctx = canvas.getContext("2d");
 
 // Drawing state
+
 let drawingHistory = [];
 let redoHistory = [];
 let currentStep = 0;
